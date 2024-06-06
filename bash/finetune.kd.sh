@@ -2,17 +2,15 @@ wandb disabled
 
 GPU=1
 
-source /home/yehai/miniconda3/bin/activate finetune-lora
-
 prompt_template_name=wizardlm
-root_path=/home/yehai/instruction-data-creation/instruction/build_hard_eval_set/hard_samples/adversarial/calibrate/exp_ood/
 
-#for name in  WizardLM-13B-V1.2  vicuna-13b-v1.5  llama-2-13b-chat  llama-2-70b-chat  ; do
+base_model=path_to_llm
+root_path=your_root_path
+mkdir $root_path
 
-#for name in  WizardLM-13B-V1.2  vicuna-13b-v1.5  llama-2-13b-chat  llama-2-70b-chat   ; do
 
-#for name in  WizardLM-13B-V1.2  vicuna-13b-v1.5     ; do
-for name in  initial_model.num=80k  llama-2-13b-chat  llama-2-70b-chat  ; do
+
+for name in vicuna-13b-v1.5 ; do
 
 data_name_T=training_set.round1.cosine_reivew.w_ref.category=1-10.review_by_${name}.base_model=${name}.num=30k.json
 data_name_S=training_set.round1.cosine_reivew.wo_ref.category=1-10.review_by_${name}.base_model=${name}.num=30k.json
@@ -20,7 +18,7 @@ data_name_S=training_set.round1.cosine_reivew.wo_ref.category=1-10.review_by_${n
 data_path_T=$root_path/data/training_set_discriminator/$data_name_T
 data_path_S=$root_path/data/training_set_discriminator/$data_name_S
 
-base_model=/home/llm2/models/llama2/llama-2-13b-hf/
+
 output_dir=$root_path/lora-weight/discriminator.distillation.T=round1.cosine_reivew.w_ref.S=round1.cosine_reivew.wo_ref.review_by_${name}.template=${prompt_template_name}.model=llama-2-13b.batch=128.lr=3e-4.epoch=2.alpha=0.3.alpha_for_kd=2/
 
 
