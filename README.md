@@ -8,9 +8,8 @@ This repository contains the code for our paper [SELF-J: Selective Instruction F
 
 ### Requirements
 
-Our training code for judge modeling is based on the project of Alpaca-Lora, so you will have to first follow the original instructions to set up the environment. 
+Our training code for judge modeling is based on the project of [Alpaca-Lora](https://github.com/tloen/alpaca-lora), so you will have to first follow the original instructions to set up the environment. 
 
-After downloding Alpaca-Lora, and suppose the file name is Alpaca-Lora, copy and put our code under ./Alpaca-Lora.  
 
 ### Download the data
 
