@@ -76,6 +76,12 @@ We provide the example training data for tuning the judge model at Huggingface, 
 
 2. Data without reference answer: [data_wo_ref](https://huggingface.co/datasets/oceanpty/self-j/blob/main/training_set.round1.cosine_reivew.wo_ref.category%3D1-10.review_by_vicuna-13b-v1.5.base_model%3Dvicuna-13b-v1.5.num%3D30k.json). 
 
+#### Training
+To train the judge model, run
+```bash
+cd bash
+bash finetune.kd.sh
+```
 
 
 ## Instruction Collection
