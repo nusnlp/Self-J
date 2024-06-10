@@ -33,19 +33,20 @@ python judge.py
 We release our judge model, tuned for the instruction-following model of Vicuna-v1.5, at Huggingface, link: [Self-J-13B-Vicuna-v1.5](https://huggingface.co/oceanpty/Self-J). 
 
 #### 4. Performance
+Our judge models achieve better correlations with GPT-4 than strong baselines.
 
 **Pearson correlation between various measures with GPT-4's scores. Assessment based on 850 test samples**
 
 | Method                  | Ours-13b | Vicuna-13b | Wizardlm-13b | Llm2-13b-chat | Llm2-70b-chat | Avg.   |
 |-------------------------|----------|------------|--------------|---------------|---------------|--------|
-| **With reference**      |          |            |              |               |               |        |
+| *With reference*      |          |            |              |               |               |        |
 | Cosine                  | 39.75    | 42.81      | 40.81        | 59.04         | 58.82         | 48.25  |
 | Self-eval               | 44.66    | 55.13      | 48.52        | 40.26         | 50.70         | 47.85  |
 | Self-eval + Cosine      | 53.19    | 60.77      | 55.69        | 64.72         | 65.51         | 59.98  |
 | GPT-3.5-turbo           | 66.41    | 66.58      | 69.96        | 73.35         | 75.81         | 70.42  |
 | GPT-3.5-turbo + Cosine  | **68.33**| 69.99      | **70.90**    | **78.13**     | **78.12**     | 73.09  |
 | Self-J (ours)           | 66.75    | **70.95**  | 69.56        | 72.76         | 71.70         | 70.34  |
-| **Without reference**   |          |            |              |               |               |        |
+| *Without reference*   |          |            |              |               |               |        |
 | PPL                     | 13.22    | 13.46      | 6.47         | 29.25         | -3.99         | 11.68  |
 | VRO                     | 45.20    | 40.03      | 38.24        | 40.66         | 41.47         | 41.12  |
 | Self-eval               | 1.23     | 15.19      | 12.75        | 12.13         | 15.99         | 11.46  |
@@ -53,14 +54,13 @@ We release our judge model, tuned for the instruction-following model of Vicuna-
 | Auto-J-13b              | 37.02    | 39.68      | 37.88        | 53.71         | 49.43         | 43.54  |
 | UltraRM-13b             | 43.50    | 44.18      | 50.68        | 63.83         | 62.69         | 52.98  |
 
-**Judge Models-13b Results**
+*Judge Models-13b Results*
 
 | Judge Model               | Ours-13b | Vicuna-13b | Wizardlm-13b | Llm2-13b-chat | Llm2-70b-chat | Avg.   |
 |---------------------------|----------|------------|--------------|---------------|---------------|--------|
 | Judge (Cosine)            | 39.73    | 38.78      | 39.21        | 61.20         | 58.06         | 47.40  |
 | Judge (Self-eval)         | 45.02    | 45.14      | 43.61        | 48.13         | 44.57         | 45.29  |
 | Self-J (ours)             | 56.94    | 56.67      | 53.10        | 64.87         | 61.65         | 58.65  |
-| Self-J (ours) - self-distil| 50.35   | 50.75      | 49.76        | 62.02         | 59.91         | 54.56  |
 
 
 ## Judge Model Tuning
