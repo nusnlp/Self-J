@@ -1,6 +1,19 @@
-## SELF-J
+# SELF-J
 
 This repository contains the code for our paper [SELF-J: Selective Instruction Following with Alignment Self-Evaluation](). 
+
+
+## Overview
+To address inaccuracies in large language models (LLMs) when executing instructions, the concept of selective instruction following is proposed. This method involves models declining tasks when expected response quality is low, improving reliability.
+
+A new self-training framework, Self-J, is introduced to develop judge models that assess response quality without human-annotated data. These models use the model’s inherent evaluation abilities and a gold reference for self-calibration.
+
+The models are validated using high-quality data from Hugging Face and tested extensively, showing strong correlation with advanced models like GPT-4 and superior performance across different domains.
+
+The judge models not only enhance performance in specific benchmarks but also rank 95 models from AlpacaEval, demonstrating high correlation with GPT-4. This underscores the potential of alignment self-evaluation in improving LLMs.
+
+
+![](./figures/method.png)
 
 
 
@@ -38,6 +51,8 @@ We provide the example training data for tuning the judge model at Huggingface, 
 We collect a large-scale of instructions to study alignment evaluation on generation tasks, such as coding, writing, etc. We manually filtered datasets from Hugging Face as of June 2023, particularly those in the NLP category. 
 We post-processed the datasets to filter out low-quality instructions as much as possible. 
 We retained all good-quality instructions. We removed instructions that were either too short or too long. We also used the original instructions without tokenization, paraphrasing, etc, to maintain the real distribution of the instructions. After sorting, we keep 37 datasets in total. We manually categorized the datasets into three main categories: common, coding, and academic. Common instructions mainly concern everyday matters, such as seeking advice and solving technical problems. All instructions involving coding such as code generation and debugging are classified under the coding category. Lastly, subject-specific instructions, such as science and medicine, are categorized as academic. 
+
+![](./figures/instruction_statistics_2.png)
 
 ![](./figures/instruction_statistics.png)
 
