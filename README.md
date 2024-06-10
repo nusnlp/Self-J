@@ -62,36 +62,6 @@ We release our judge model, tuned for the instruction-following model of Vicuna-
 | Self-J (ours)             | 56.94    | 56.67      | 53.10        | 64.87         | 61.65         | 58.65  |
 | Self-J (ours) - self-distil| 50.35   | 50.75      | 49.76        | 62.02         | 59.91         | 54.56  |
 
-**Assessment based on 1655 test samples (Our collections + AlpacaEval)**
-
-| Method                  | Ours-13b | Vicuna-13b | Wizardlm-13b | Llm2-13b-chat | Llm2-70b-chat | Avg.   |
-|-------------------------|----------|------------|--------------|---------------|---------------|--------|
-| **With reference**      |          |            |              |               |               |        |
-| Cosine                  | 35.76    | 41.43      | 41.41        | 54.05         | 54.11         | 45.35  |
-| Self-eval               | 37.87    | 52.21      | 42.13        | 39.96         | 46.35         | 43.70  |
-| Self-eval + Cosine      | 46.68    | 56.44      | 48.28        | 57.65         | 57.41         | 53.29  |
-| GPT-3.5-turbo           | 63.21    | 65.63      | **65.56**    | 70.69         | **71.90**     | 67.40  |
-| GPT-3.5-turbo + Cosine  | **63.70**| 66.53      | 63.48        | **73.46**     | 70.89         | 67.61  |
-| Self-J (ours)           | 58.84    | **66.54**  | 65.16        | 69.39         | 67.17         | 65.42  |
-| **Without reference**   |          |            |              |               |               |        |
-| PPL                     | 2.31     | -3.30      | -2.22        | 6.41          | -2.78         | 0.08   |
-| VRO                     | 39.49    | 36.58      | 35.57        | 45.24         | 44.05         | 40.19  |
-| Self-eval               | 1.41     | 11.94      | 14.98        | 15.05         | 11.62         | 11.00  |
-| GPT-3.5-turbo           | 18.03    | 17.21      | 17.32        | 18.79         | 19.11         | 18.09  |
-| Auto-J-13b              | 43.96    | 40.20      | 39.36        | 52.49         | 48.77         | 44.96  |
-| UltraRM-13b             | 44.87    | 44.50      | 49.80        | 64.54         | 62.72         | 53.29  |
-
-**Judge Models-13b Results (1655 Samples)**
-
-| Judge Model               | Ours-13b | Vicuna-13b | Wizardlm-13b | Llm2-13b-chat | Llm2-70b-chat | Avg.   |
-|---------------------------|----------|------------|--------------|---------------|---------------|--------|
-| Judge (Cosine)            | 31.10    | 29.86      | 36.83        | 58.85         | 52.14         | 41.76  |
-| Judge (Self-eval)         | 44.02    | 42.39      | 42.44        | 53.26         | 41.92         | 44.81  |
-| Self-J (ours)             | 48.95    | 51.10      | 50.72        | 64.54         | 59.78         | 55.02  |
-| Self-J (ours) - self-distil| 41.07   | 43.16      | 45.08        | 60.59         | 55.06         | 48.99  |
-
-
-
 
 ## Judge Model Tuning
 Our training code for judge modeling is based on the project of [Alpaca-Lora](https://github.com/tloen/alpaca-lora), so you will have to first follow the original instructions to set up the environment. 
