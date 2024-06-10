@@ -12,11 +12,11 @@ This repository contains the code for our paper [Self-Judge: Selective Instructi
     - [4. Performance](#4-performance)
   - [Judge Model Tuning](#judge-model-tuning)
     - [1. Training Data](#1-training-data)
-    - [2. Training](#2-training)
-  - [Instruction Collection](#main-results)
-    - [1. Statistics](1-statistics)
-    - [2. Data Release](2-data-release)
-    - [3. Performance: AlpacaEval](3-performance-alpacaeval)
+    - [2. Script](#2-script)
+  - [Instruction Collection](#instruction-collection)
+    - [1. Statistics](#1-statistics)
+    - [2. Data Release](#2-data-release)
+    - [3. Performance: AlpacaEval](#3-performance-alpacaeval)
 
 
 ## Overview
@@ -92,7 +92,7 @@ We provide the example training data for tuning the judge model at Huggingface, 
 
 2. Data without reference answer: [data_wo_ref](https://huggingface.co/datasets/oceanpty/self-j/blob/main/training_set.round1.cosine_reivew.wo_ref.category%3D1-10.review_by_vicuna-13b-v1.5.base_model%3Dvicuna-13b-v1.5.num%3D30k.json). 
 
-#### 2. Training
+#### 2. Script
 To train the judge model, run
 ```bash
 cd bash
