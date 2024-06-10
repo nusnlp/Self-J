@@ -7,13 +7,16 @@ This repository contains the code for our paper [Self-Judge: Selective Instructi
   - [Overview](#overview)
   - [Quick Start](#quick-start)
     - [1. Setup](#1-setup)
-    - [Inference](#inference)
-  - [TTA Method: Quick Start](#tta-method-quick-start)
-    - [Requirements](#requirements)
-    - [Download the data](#download-the-data)
-    - [Obtain Base Model](#obtain-base-model)
-    - [Run TTA Method](#run-tta-method)
-  - [Main Results](#main-results)
+    - [2. Inference](#2-inference)
+    - [3. Model](#3-model)
+    - [4. Performance](#4-performance)
+  - [Judge Model Tuning](#judge-model-tuning)
+    - [1. Training Data](#1-training-data)
+    - [2. Training](#2-training)
+  - [Instruction Collection](#main-results)
+    - [1. Statistics](1-statistics)
+    - [2. Data Release](2-data-release)
+    - [3. Performance: AlpacaEval](3-performance-alpacaeval)
 
 
 ## Overview
