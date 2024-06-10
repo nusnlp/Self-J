@@ -33,7 +33,7 @@ python judge.py
 We release our judge model, tuned for the instruction-following model of Vicuna-v1.5, at Huggingface, link: [Self-J-13B-Vicuna-v1.5](https://huggingface.co/oceanpty/Self-J). 
 
 #### 4. Performance
-Our judge models achieve better correlations with GPT-4 than strong baselines.
+Our judge models achieve better correlations with GPT-4 than strong baselines. However, it can still suffer from the issue of distribution shifts.
 
 **Pearson correlation between various measures with GPT-4's scores. Assessment based on 850 test samples**
 
@@ -61,6 +61,8 @@ Our judge models achieve better correlations with GPT-4 than strong baselines.
 | Judge (Cosine)            | 39.73    | 38.78      | 39.21        | 61.20         | 58.06         | 47.40  |
 | Judge (Self-eval)         | 45.02    | 45.14      | 43.61        | 48.13         | 44.57         | 45.29  |
 | Self-J (ours)             | 56.94    | 56.67      | 53.10        | 64.87         | 61.65         | 58.65  |
+
+
 
 
 ## Judge Model Tuning
