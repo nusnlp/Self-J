@@ -33,7 +33,7 @@ The judge models not only enhance performance in specific benchmarks but also ra
 ## Quick Start
 We provide one of our trained judge models and the code of generating quality scores with the judge model for evaluation. 
 
-#### 1. Setup
+### 1. Setup
 We base on `vLLM` for inference, so you have to refer [here](https://docs.vllm.ai/en/latest/getting_started/installation.html) to install vLLM if you don't have. 
 
 #### 2. Inference
