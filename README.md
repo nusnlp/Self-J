@@ -50,7 +50,7 @@ By fine-tuning Llama-2-13b with random 87K of our instruction selections and
 GPT-3.5 Turbo responses, we can match Llama-2-13b-Chat's performance on AlpacaEval.
 | Models | V1 | v2 |
 | :------------- | :----------------: | :--------: | 
-|Vicuna 13B v1.5|   | - |  6.7 |
+|Vicuna 13B v1.5    |  - | 6.7 |
 | Llama-2-13B-Chat    |  81.09 |     7.7    |    
 | Ours-Llama-2-13B     |  79.13  |     7.33     |   
 
