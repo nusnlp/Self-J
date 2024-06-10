@@ -34,7 +34,7 @@ We release our judge model, tuned for the instruction-following model of Vicuna-
 
 #### 4. Performance
 
-**Assessment based on 850 test samples**
+**Pearson correlation between various measures with GPT-4's scores. Assessment based on 850 test samples**
 
 | Method                  | Ours-13b | Vicuna-13b | Wizardlm-13b | Llm2-13b-chat | Llm2-70b-chat | Avg.   |
 |-------------------------|----------|------------|--------------|---------------|---------------|--------|
