@@ -1,6 +1,19 @@
 # SELF-J
 
-This repository contains the code for our paper [SELF-J: Selective Instruction Following with Alignment Self-Evaluation](). 
+This repository contains the code for our paper [Self-Judge: Selective Instruction Following with Alignment Self-Evaluation](). 
+
+
+## Quick Links
+  - [Overview](#overview)
+  - [Quick Start](#quick-start)
+    - [Setup](#setup)
+    - [Inference](#inference)
+  - [TTA Method: Quick Start](#tta-method-quick-start)
+    - [Requirements](#requirements)
+    - [Download the data](#download-the-data)
+    - [Obtain Base Model](#obtain-base-model)
+    - [Run TTA Method](#run-tta-method)
+  - [Main Results](#main-results)
 
 
 ## Overview
